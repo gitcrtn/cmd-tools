@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+echo `pwd`/`git rev-parse --show-cdup`
+
