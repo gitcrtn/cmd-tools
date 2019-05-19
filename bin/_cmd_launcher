@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+SH=$(realpath $0)
+SHDIR=$(dirname $SH)
+ROOTDIR=$(dirname $SHDIR)
+
+ARGS=()
+index=0
+
+for var in "$@"; do
+    (("$index" > "0")) && ARGS+=("$var")
+    ((index++))
+done
+
+export PYTHONPATH=$ROOTDIR/venv/lib/python3.7/site-packages
+source $ROOTDIR/venv/bin/activate
+python $ROOTDIR/scripts/$1.py "${ARGS[@]}"
+deactivate
