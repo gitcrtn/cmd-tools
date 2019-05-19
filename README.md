@@ -6,12 +6,12 @@ Lazy command tools
 - [file-uploader](https://github.com/gitcrtn/cmd-tools/blob/master/docs/file-uploader.md)
 - [git-root](https://github.com/gitcrtn/cmd-tools/blob/master/docs/git-root.md)
 
-## Requirement
+## Requirements
 Python 3.7
 
 ## Installation
     git clone https://github.com/gitcrtn/cmd-tools.git
-    cd translate
+    cd cmd-tools
     
     python -m venv venv
     source venv/bin/activate
